@@ -4,7 +4,7 @@ metadata:
   name: my-app-1
   namespace: aoa
 spec:
-  project: default
+  project: poc
   source:
     repoURL: 'https://github.com/richard-iovanisci/apps-of-apps/'
     path: my-app-2
