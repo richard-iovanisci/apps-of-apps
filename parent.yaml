@@ -2,16 +2,16 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: my-apps
-  namespace: aoa
+  namespace: argocd
 spec:
-  project: poc
+  project: default
   source:
     repoURL: 'https://github.com/richard-iovanisci/apps-of-apps/'
     path: .
     targetRevision: HEAD
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: 'aoa'
+    namespace: 'argocd'
   syncPolicy:
     automated:
       prune: true
