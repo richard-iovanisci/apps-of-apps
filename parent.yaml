@@ -1,13 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: my-app-1
+  name: my-apps
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: 'https://github.com/richard-iovanisci/apps-of-apps/'
-    path: my-app-2
+    path: .
     targetRevision: HEAD
   destination:
     server: 'https://kubernetes.default.svc'
