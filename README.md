@@ -1,1 +1,1 @@
-# apps-of-apps
+# apps-of-apps POC
