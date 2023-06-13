@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: 'https://github.com/richard-iovanisci/apps-of-apps/'
-    path: my-app-2
+    path: apps/my-app-2
     targetRevision: HEAD
   destination:
     server: 'https://kubernetes.default.svc'
